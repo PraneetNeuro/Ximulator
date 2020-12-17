@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		27280CE623F9338800A9E491 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27280CE523F9338800A9E491 /* AppDelegate.swift */; };
+		27280CE823F9338800A9E491 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27280CE723F9338800A9E491 /* ContentView.swift */; };
+		27280CEA23F9338B00A9E491 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27280CE923F9338B00A9E491 /* Assets.xcassets */; };
+		27280CED23F9338B00A9E491 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27280CEC23F9338B00A9E491 /* Preview Assets.xcassets */; };
+		27280CF023F9338B00A9E491 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27280CEE23F9338B00A9E491 /* Main.storyboard */; };
+		27280CFC23F9338B00A9E491 /* Ximulator_for_macOS_10_15Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27280CFB23F9338B00A9E491 /* Ximulator_for_macOS_10_15Tests.swift */; };
+		27280D0723F9338B00A9E491 /* Ximulator_for_macOS_10_15UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27280D0623F9338B00A9E491 /* Ximulator_for_macOS_10_15UITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		27280CF823F9338B00A9E491 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27280CDA23F9338800A9E491 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27280CE123F9338800A9E491;
+			remoteInfo = "Ximulator for macOS 10.15";
+		};
+		27280D0323F9338B00A9E491 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27280CDA23F9338800A9E491 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27280CE123F9338800A9E491;
+			remoteInfo = "Ximulator for macOS 10.15";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		27280CE223F9338800A9E491 /* Ximulator for macOS 10.15.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ximulator for macOS 10.15.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		27280CE523F9338800A9E491 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		27280CE723F9338800A9E491 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		27280CE923F9338B00A9E491 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		27280CEC23F9338B00A9E491 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		27280CEF23F9338B00A9E491 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		27280CF123F9338B00A9E491 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27280CF223F9338B00A9E491 /* Ximulator_for_macOS_10_15.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Ximulator_for_macOS_10_15.entitlements; sourceTree = "<group>"; };
+		27280CF723F9338B00A9E491 /* Ximulator for macOS 10.15Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ximulator for macOS 10.15Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		27280CFB23F9338B00A9E491 /* Ximulator_for_macOS_10_15Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ximulator_for_macOS_10_15Tests.swift; sourceTree = "<group>"; };
+		27280CFD23F9338B00A9E491 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27280D0223F9338B00A9E491 /* Ximulator for macOS 10.15UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ximulator for macOS 10.15UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		27280D0623F9338B00A9E491 /* Ximulator_for_macOS_10_15UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ximulator_for_macOS_10_15UITests.swift; sourceTree = "<group>"; };
+		27280D0823F9338B00A9E491 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		27280CDF23F9338800A9E491 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27280CF423F9338B00A9E491 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27280CFF23F9338B00A9E491 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		27280CD923F9338800A9E491 = {
+			isa = PBXGroup;
+			children = (
+				27280CE423F9338800A9E491 /* Ximulator for macOS 10.15 */,
+				27280CFA23F9338B00A9E491 /* Ximulator for macOS 10.15Tests */,
+				27280D0523F9338B00A9E491 /* Ximulator for macOS 10.15UITests */,
+				27280CE323F9338800A9E491 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		27280CE323F9338800A9E491 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				27280CE223F9338800A9E491 /* Ximulator for macOS 10.15.app */,
+				27280CF723F9338B00A9E491 /* Ximulator for macOS 10.15Tests.xctest */,
+				27280D0223F9338B00A9E491 /* Ximulator for macOS 10.15UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		27280CE423F9338800A9E491 /* Ximulator for macOS 10.15 */ = {
+			isa = PBXGroup;
+			children = (
+				27280CE523F9338800A9E491 /* AppDelegate.swift */,
+				27280CE723F9338800A9E491 /* ContentView.swift */,
+				27280CE923F9338B00A9E491 /* Assets.xcassets */,
+				27280CEE23F9338B00A9E491 /* Main.storyboard */,
+				27280CF123F9338B00A9E491 /* Info.plist */,
+				27280CF223F9338B00A9E491 /* Ximulator_for_macOS_10_15.entitlements */,
+				27280CEB23F9338B00A9E491 /* Preview Content */,
+			);
+			path = "Ximulator for macOS 10.15";
+			sourceTree = "<group>";
+		};
+		27280CEB23F9338B00A9E491 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				27280CEC23F9338B00A9E491 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		27280CFA23F9338B00A9E491 /* Ximulator for macOS 10.15Tests */ = {
+			isa = PBXGroup;
+			children = (
+				27280CFB23F9338B00A9E491 /* Ximulator_for_macOS_10_15Tests.swift */,
+				27280CFD23F9338B00A9E491 /* Info.plist */,
+			);
+			path = "Ximulator for macOS 10.15Tests";
+			sourceTree = "<group>";
+		};
+		27280D0523F9338B00A9E491 /* Ximulator for macOS 10.15UITests */ = {
+			isa = PBXGroup;
+			children = (
+				27280D0623F9338B00A9E491 /* Ximulator_for_macOS_10_15UITests.swift */,
+				27280D0823F9338B00A9E491 /* Info.plist */,
+			);
+			path = "Ximulator for macOS 10.15UITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		27280CE123F9338800A9E491 /* Ximulator for macOS 10.15 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27280D0B23F9338B00A9E491 /* Build configuration list for PBXNativeTarget "Ximulator for macOS 10.15" */;
+			buildPhases = (
+				27280CDE23F9338800A9E491 /* Sources */,
+				27280CDF23F9338800A9E491 /* Frameworks */,
+				27280CE023F9338800A9E491 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Ximulator for macOS 10.15";
+			productName = "Ximulator for macOS 10.15";
+			productReference = 27280CE223F9338800A9E491 /* Ximulator for macOS 10.15.app */;
+			productType = "com.apple.product-type.application";
+		};
+		27280CF623F9338B00A9E491 /* Ximulator for macOS 10.15Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27280D0E23F9338B00A9E491 /* Build configuration list for PBXNativeTarget "Ximulator for macOS 10.15Tests" */;
+			buildPhases = (
+				27280CF323F9338B00A9E491 /* Sources */,
+				27280CF423F9338B00A9E491 /* Frameworks */,
+				27280CF523F9338B00A9E491 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				27280CF923F9338B00A9E491 /* PBXTargetDependency */,
+			);
+			name = "Ximulator for macOS 10.15Tests";
+			productName = "Ximulator for macOS 10.15Tests";
+			productReference = 27280CF723F9338B00A9E491 /* Ximulator for macOS 10.15Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		27280D0123F9338B00A9E491 /* Ximulator for macOS 10.15UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27280D1123F9338B00A9E491 /* Build configuration list for PBXNativeTarget "Ximulator for macOS 10.15UITests" */;
+			buildPhases = (
+				27280CFE23F9338B00A9E491 /* Sources */,
+				27280CFF23F9338B00A9E491 /* Frameworks */,
+				27280D0023F9338B00A9E491 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				27280D0423F9338B00A9E491 /* PBXTargetDependency */,
+			);
+			name = "Ximulator for macOS 10.15UITests";
+			productName = "Ximulator for macOS 10.15UITests";
+			productReference = 27280D0223F9338B00A9E491 /* Ximulator for macOS 10.15UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		27280CDA23F9338800A9E491 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Praneet S";
+				TargetAttributes = {
+					27280CE123F9338800A9E491 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					27280CF623F9338B00A9E491 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 27280CE123F9338800A9E491;
+					};
+					27280D0123F9338B00A9E491 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 27280CE123F9338800A9E491;
+					};
+				};
+			};
+			buildConfigurationList = 27280CDD23F9338800A9E491 /* Build configuration list for PBXProject "Ximulator for macOS 10.15" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 27280CD923F9338800A9E491;
+			productRefGroup = 27280CE323F9338800A9E491 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				27280CE123F9338800A9E491 /* Ximulator for macOS 10.15 */,
+				27280CF623F9338B00A9E491 /* Ximulator for macOS 10.15Tests */,
+				27280D0123F9338B00A9E491 /* Ximulator for macOS 10.15UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		27280CE023F9338800A9E491 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27280CF023F9338B00A9E491 /* Main.storyboard in Resources */,
+				27280CED23F9338B00A9E491 /* Preview Assets.xcassets in Resources */,
+				27280CEA23F9338B00A9E491 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27280CF523F9338B00A9E491 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27280D0023F9338B00A9E491 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		27280CDE23F9338800A9E491 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27280CE823F9338800A9E491 /* ContentView.swift in Sources */,
+				27280CE623F9338800A9E491 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27280CF323F9338B00A9E491 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27280CFC23F9338B00A9E491 /* Ximulator_for_macOS_10_15Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27280CFE23F9338B00A9E491 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27280D0723F9338B00A9E491 /* Ximulator_for_macOS_10_15UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		27280CF923F9338B00A9E491 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27280CE123F9338800A9E491 /* Ximulator for macOS 10.15 */;
+			targetProxy = 27280CF823F9338B00A9E491 /* PBXContainerItemProxy */;
+		};
+		27280D0423F9338B00A9E491 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27280CE123F9338800A9E491 /* Ximulator for macOS 10.15 */;
+			targetProxy = 27280D0323F9338B00A9E491 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		27280CEE23F9338B00A9E491 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27280CEF23F9338B00A9E491 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		27280D0923F9338B00A9E491 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		27280D0A23F9338B00A9E491 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		27280D0C23F9338B00A9E491 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Ximulator for macOS 10.15/Ximulator_for_macOS_10_15.entitlements";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"Ximulator for macOS 10.15/Preview Content\"";
+				DEVELOPMENT_TEAM = TR3K2EP48P;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Ximulator for macOS 10.15/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lucifer.Ximulator-for-macOS-10-15";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		27280D0D23F9338B00A9E491 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Ximulator for macOS 10.15/Ximulator_for_macOS_10_15.entitlements";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"Ximulator for macOS 10.15/Preview Content\"";
+				DEVELOPMENT_TEAM = TR3K2EP48P;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Ximulator for macOS 10.15/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lucifer.Ximulator-for-macOS-10-15";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		27280D0F23F9338B00A9E491 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Ximulator for macOS 10.15Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lucifer.Ximulator-for-macOS-10-15Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ximulator for macOS 10.15.app/Contents/MacOS/Ximulator for macOS 10.15";
+			};
+			name = Debug;
+		};
+		27280D1023F9338B00A9E491 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Ximulator for macOS 10.15Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lucifer.Ximulator-for-macOS-10-15Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ximulator for macOS 10.15.app/Contents/MacOS/Ximulator for macOS 10.15";
+			};
+			name = Release;
+		};
+		27280D1223F9338B00A9E491 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Ximulator for macOS 10.15UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lucifer.Ximulator-for-macOS-10-15UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Ximulator for macOS 10.15";
+			};
+			name = Debug;
+		};
+		27280D1323F9338B00A9E491 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Ximulator for macOS 10.15UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.lucifer.Ximulator-for-macOS-10-15UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Ximulator for macOS 10.15";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		27280CDD23F9338800A9E491 /* Build configuration list for PBXProject "Ximulator for macOS 10.15" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27280D0923F9338B00A9E491 /* Debug */,
+				27280D0A23F9338B00A9E491 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27280D0B23F9338B00A9E491 /* Build configuration list for PBXNativeTarget "Ximulator for macOS 10.15" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27280D0C23F9338B00A9E491 /* Debug */,
+				27280D0D23F9338B00A9E491 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27280D0E23F9338B00A9E491 /* Build configuration list for PBXNativeTarget "Ximulator for macOS 10.15Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27280D0F23F9338B00A9E491 /* Debug */,
+				27280D1023F9338B00A9E491 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27280D1123F9338B00A9E491 /* Build configuration list for PBXNativeTarget "Ximulator for macOS 10.15UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27280D1223F9338B00A9E491 /* Debug */,
+				27280D1323F9338B00A9E491 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 27280CDA23F9338800A9E491 /* Project object */;
+}
