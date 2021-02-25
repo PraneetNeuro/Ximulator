@@ -22,87 +22,65 @@ struct ContentView: View {
     @State var batteryLevel:Double = 10
     @State var clipboard = "Pasteboard: "
     
+    func shell(args: [String], executableURL: URL){
+        let result = Process()
+        result.executableURL = executableURL
+        result.arguments = args
+        try! result.run()
+    }
+    
     func screenshot(){
         //xcrun simctl io booted screenshot screen.png
         //xcrun simctl addmedia booted ~/Desktop/simctl_list.gif
         let executableURL = URL(fileURLWithPath: "/usr/bin/xcrun")
-        let result = Process()
-        result.executableURL = executableURL
-        result.arguments = ["simctl","io","booted","screenshot","~/Desktop/screenshot.png"]
-        try! result.run()
+        shell(args: ["simctl","io","booted","screenshot","~/Desktop/screenshot.png"], executableURL: executableURL)
+    }
+    
+    func getDeviceID() -> String {
+        let uuid = self.selection.split(separator: " ").reversed()[1]
+        return String(uuid).replacingOccurrences(of: "(", with: "").replacingOccurrences(of: ")", with: "")
     }
     
     func updateTime(){
         //xcrun simctl status_bar "iPhone 11" override --time 9:41
         let executableURL = URL(fileURLWithPath: "/usr/bin/xcrun")
-        let result = Process()
-        result.executableURL = executableURL
-        let UUID = self.selection.split(separator: " ").reversed()[1]
-        let ID = String(UUID).replacingOccurrences(of: "(", with: "").replacingOccurrences(of: ")", with: "")
-        result.arguments = ["simctl","status_bar","\(ID)","override","--time","\(hours):\(minutes)"]
-        try! result.run()
+        shell(args: ["simctl","status_bar","\(getDeviceID())","override","--time","\(hours):\(minutes)"], executableURL: executableURL)
     }
     
     func updateBattery(){
         //xcrun simctl status_bar "iPhone 11" override --time 9:41
         let executableURL = URL(fileURLWithPath: "/usr/bin/xcrun")
-        let result = Process()
-        result.executableURL = executableURL
-        let UUID = self.selection.split(separator: " ").reversed()[1]
-        let ID = String(UUID).replacingOccurrences(of: "(", with: "").replacingOccurrences(of: ")", with: "")
-        result.arguments = ["simctl","status_bar","\(ID)","override","--batteryState","\(battery)"]
-        try! result.run()
+        shell(args: ["simctl","status_bar","\(getDeviceID())","override","--batteryState","\(battery)"], executableURL: executableURL)
     }
     
     func updateBatteryLevel(){
         //xcrun simctl status_bar "iPhone 11" override --time 9:41
         let executableURL = URL(fileURLWithPath: "/usr/bin/xcrun")
-        let result = Process()
-        result.executableURL = executableURL
-        let UUID = self.selection.split(separator: " ").reversed()[1]
-        let ID = String(UUID).replacingOccurrences(of: "(", with: "").replacingOccurrences(of: ")", with: "")
-        result.arguments = ["simctl","status_bar","\(ID)","override","--batteryLevel","\(Int(batteryLevel))"]
-        try! result.run()
+        shell(args: ["simctl","status_bar","\(getDeviceID())","override","--batteryLevel","\(Int(batteryLevel))"], executableURL: executableURL)
     }
     
     func updateDataNetwork(){
         //xcrun simctl status_bar "iPhone 11" override --time 9:41
         let executableURL = URL(fileURLWithPath: "/usr/bin/xcrun")
-        let result = Process()
-        result.executableURL = executableURL
-        let UUID = self.selection.split(separator: " ").reversed()[1]
-        let ID = String(UUID).replacingOccurrences(of: "(", with: "").replacingOccurrences(of: ")", with: "")
-        result.arguments = ["simctl","status_bar","\(ID)","override","--dataNetwork","\(network)"]
-        try! result.run()
+        shell(args: ["simctl","status_bar","\(getDeviceID())","override","--dataNetwork","\(network)"], executableURL: executableURL)
     }
     
     func shutdown(){
         let executableURL = URL(fileURLWithPath: "/usr/bin/xcrun")
-        let result = Process()
-        result.executableURL = executableURL
-        let UUID = self.selection.split(separator: " ").reversed()[1]
-        let ID = String(UUID).replacingOccurrences(of: "(", with: "").replacingOccurrences(of: ")", with: "")
-        result.arguments = ["simctl","shutdown","\(ID)"]
-        try! result.run()
+        shell(args: ["simctl","shutdown","\(getDeviceID())"], executableURL: executableURL)
         self.loadSims()
     }
     
     func addMedia(path:String){
         //xcrun simctl addmedia booted ~/Desktop/simctl_list.gif
         let executableURL = URL(fileURLWithPath: "/usr/bin/xcrun")
-        let result = Process()
-        result.executableURL = executableURL
-        result.arguments = ["simctl","addmedia","booted", path]
-        try! result.run()
+        shell(args: ["simctl","addmedia","booted", path], executableURL: executableURL)
     }
     
     func installApp(path:String){
         //xcrun simctl addmedia booted ~/Desktop/simctl_list.gif
         let executableURL = URL(fileURLWithPath: "/usr/bin/xcrun")
-        let result = Process()
-        result.executableURL = executableURL
-        result.arguments = ["simctl","install","booted", path]
-        try! result.run()
+        shell(args: ["simctl","install","booted", path], executableURL: executableURL)
     }
     
     func process(res:[Substring]) -> [String] {
